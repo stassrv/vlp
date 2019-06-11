@@ -69,20 +69,33 @@ $global-font-size: 16px;
 $global-width: 1200px;
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #ff5912,
+  primary: #F19D21,
   secondary: #767676,
-  success: #3adb76,
+  success: #1DB305,
   warning: #ffae00,
   alert: #cc4b37,
 );
+$accent: #FFB320;
+$light-accent: #F9D61C;
+$new-book-text-1 : #FFD3AA;
+$new-book-text-2 : #FBFF20;
+$new-book-text-3 : #BBF3BD;
+$new-book-text-4 : #F3C1BB;
+$author: #7F7979;
+$description: #999999;
+$placeholders-inactive-order: #DFDFDF;
+$complete-order: #1DB305;
+$order-process: #F19D21;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #34404b;
 $white: #fefefe;
 $body-background: #f4f6f8;
-$body-font-color: #495662;
-$body-font-family: 'Harmonia Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-color: #110601;
+$heading-font-family: 'Philosopher', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Forum', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$additional-font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -148,11 +161,11 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 52),
-    'h2': ('font-size': 36),
-    'h3': ('font-size': 28),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 16),
+    'h1': ('font-size': 36),
+    'h2': ('font-size': 30),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 20),
+    'h5': ('font-size': 18),
     'h6': ('font-size': 16),
   ),
 );
