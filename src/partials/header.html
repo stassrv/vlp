@@ -2,27 +2,30 @@
     <div class="ba-header-header">
         <div class="row align-spaced ">
             <div class="large-6 column">
-                <a href="/">
-                    <svg width="99" height="88" viewBox="0 0 99 88" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 88L22 15H39L62 88H39L31 46L22 88H0Z" fill="#F9D61C"/>
-                        <path d="M63.46 24.6L65.47 23.6L82.48 75.27L99 65L76 0L39 15L62 88L77.05 78.64L80.36 76.59L63.46 24.6Z" fill="#110601"/>
-                        </svg>
-                        
-                </a>
-                
-                <button class="menu-icon dark hide-for-medium" type="button" data-open="offCanvas" aria-label="Show menu">
-                    </button>
-                    <nav>
-                        <ul class="menu ba-main-menu show-for-medium">
-                            <li {{#ifpage 'index'}} class="active" {{/ifpage}}><a href="catalog.html">КАТАЛОГ</a></li>
-                            <li {{#ifpage 'index'}} class="active" {{/ifpage}}><a href="events.html">ПОДІЇ/ЦІКАВЕ</a></li>
-                            <li {{#ifpage 'index'}} class="active" {{/ifpage}}><a href="contacts.html">КОНТАКТИ</a></li>
-                        </ul>
-                    </nav>
+                <div class="ba-header-header__leftnav">
+                    <a href="index.html" class="ba-logo">
+                        <svg width="99" height="88" viewBox="0 0 99 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 88L22 15H39L62 88H39L31 46L22 88H0Z" fill="#F9D61C"/>
+                            <path d="M63.46 24.6L65.47 23.6L82.48 75.27L99 65L76 0L39 15L62 88L77.05 78.64L80.36 76.59L63.46 24.6Z" fill="#110601"/>
+                            </svg>
+                            
+                    </a>
+                    
+                    <button class="menu-icon dark hide-for-medium" type="button" data-open="offCanvas" aria-label="Show menu">
+                        </button>
+                        <nav>
+                            <ul class="menu ba-menu-main show-for-medium">
+                                <li {{#ifpage 'index'}} class="active" {{/ifpage}}><a href="catalog.html">КАТАЛОГ</a></li>
+                                <li {{#ifpage 'index'}} class="active" {{/ifpage}}><a href="events.html">ПОДІЇ/ЦІКАВЕ</a></li>
+                                <li {{#ifpage 'index'}} class="active" {{/ifpage}}><a href="contacts.html">КОНТАКТИ</a></li>
+                            </ul>
+                        </nav>
+                </div>
+                <!-- /.ba-header-header__leftnav -->
             </div>
             <!-- /.column -->
             <div class="large-6 column">
-                <ul class="menu ba-search-menu">
+                <ul class="menu ba-menu-search">
                         <li {{#ifpage 'index'}} class="active" {{/ifpage}}>
                             <a href="catalog.html"><svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M28.7284 29.0411L20.3123 20.2885C22.4589 18.1356 23.7888 15.1677 23.7888 11.8944C23.7888 5.3355 18.4533 0 11.8944 0C5.3355 0 0 5.3355 0 11.8944C0 18.4533 5.3355 23.7888 11.8944 23.7888C14.7734 23.7888 17.4157 22.7597 19.4751 21.052L27.9117 29.8261C28.0227 29.9422 28.1711 30 28.3201 30C28.4617 30 28.6027 29.9473 28.7126 29.842C28.938 29.625 28.9448 29.2665 28.7284 29.0411ZM11.8944 22.656C5.96024 22.656 1.1328 17.8286 1.1328 11.8944C1.1328 5.96024 5.96024 1.1328 11.8944 1.1328C17.8286 1.1328 22.656 5.96024 22.656 11.8944C22.656 17.8286 17.828 22.656 11.8944 22.656Z" fill="#110601"/>

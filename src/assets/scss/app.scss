@@ -73,3 +73,45 @@
 @import "components/header";
 @import "components/footer";
 
+.ba-header-header{
+    font-family: $heading-font-family;
+    color: $body-font-color;
+    &__leftnav{
+        display: flex;
+        .ba-logo{
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 400px;
+                border-bottom: 1px solid #000;
+                top: 64px;
+                left: 90px;
+            }
+        }
+        .ba-menu-main{
+            padding-top: 40px;
+            li{
+                padding-left: 40px;
+            }
+        }
+    }
+}
+.ba-menu{
+    &-main{
+        display: flex;
+    }
+    &-search{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            padding-left: 20px;
+            padding: 10px;
+            font-style: 16px;
+            line-height: 18px;
+        }
+        svg{
+            margin-right: 5px;
+        }
+    }
+}
