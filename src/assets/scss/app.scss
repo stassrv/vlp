@@ -78,21 +78,57 @@
     color: $body-font-color;
     &__leftnav{
         display: flex;
+        a{
+            svg{
+                width: 50px;
+                height: 44px;
+                @include breakpoint(medium){
+                    width: 99px;
+                    height: 88px;
+                }
+            }
+        }
+        nav{
+            padding-top: 20px;
+            button{
+                margin-left: 10px;
+            }
+            @include breakpoint(medium){
+                padding-top: 40px;
+            }
+        }
         .ba-logo{
             position: relative;
             &::after{
                 content: '';
                 position: absolute;
-                width: 400px;
+                width: 0px;
                 border-bottom: 1px solid #000;
                 top: 64px;
                 left: 90px;
             }
+            @include breakpoint(medium){
+
+                &::after{
+                    width: 220px;
+                }
+            }
+            @include breakpoint(large){
+                &::after{
+                    width: 400px;
+                }
+            }
         }
         .ba-menu-main{
-            padding-top: 40px;
             li{
+                font-size: 10px;
+                padding-left: 5px;
+            }
+            @include breakpoint(large){
+            li{
+                font-size: 16px;
                 padding-left: 40px;
+            }
             }
         }
     }
@@ -105,13 +141,23 @@
         display: flex;
         justify-content: flex-end;
         li{
-            padding-left: 20px;
             padding: 10px;
+            padding-left: 5px;
             font-style: 16px;
             line-height: 18px;
+            font-size: 0;
+            @include breakpoint(medium){
+                padding-left: 20px;
+                font-size: 18px;
+            }
         }
         svg{
             margin-right: 5px;
+            @include breakpoint(small){
+                margin: 0;
+                width: 25px;
+                height: 25px;
+            }
         }
     }
 }

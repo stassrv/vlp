@@ -1,7 +1,7 @@
 <header class="ba-header-wrap">    
     <div class="ba-header-header">
         <div class="row align-spaced ">
-            <div class="large-6 column">
+            <div class="small-5 large-6 column">
                 <div class="ba-header-header__leftnav">
                     <a href="index.html" class="ba-logo">
                         <svg width="99" height="88" viewBox="0 0 99 88" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,10 +11,10 @@
                             
                     </a>
                     
-                    <button class="menu-icon dark hide-for-medium" type="button" data-open="offCanvas" aria-label="Show menu">
-                        </button>
-                        <nav>
-                            <ul class="menu ba-menu-main show-for-medium">
+                    <nav>
+                        <button class="menu-icon dark hide-for-medium ba-offcanvas" type="button" data-open="offCanvas" aria-label="Show menu">
+                            </button>
+                            <ul class="menu ba-menu-main show-for-medium shrink">
                                 <li {{#ifpage 'index'}} class="active" {{/ifpage}}><a href="catalog.html">КАТАЛОГ</a></li>
                                 <li {{#ifpage 'index'}} class="active" {{/ifpage}}><a href="events.html">ПОДІЇ/ЦІКАВЕ</a></li>
                                 <li {{#ifpage 'index'}} class="active" {{/ifpage}}><a href="contacts.html">КОНТАКТИ</a></li>
@@ -24,7 +24,7 @@
                 <!-- /.ba-header-header__leftnav -->
             </div>
             <!-- /.column -->
-            <div class="large-6 column">
+            <div class="small-7 large-6 column">
                 <ul class="menu ba-menu-search">
                         <li {{#ifpage 'index'}} class="active" {{/ifpage}}>
                             <a href="catalog.html"><svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
